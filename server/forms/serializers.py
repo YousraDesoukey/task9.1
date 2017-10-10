@@ -8,7 +8,7 @@ class FormsSerializer(serializers.ModelSerializer):
         ProfilePicture = serializers.CharField(max_length=1000)
         Name = serializers.CharField(max_length=100)
         Email = serializers.EmailField(max_length=500)
-        Mobile = serializers.CharField(length=12)
+        Mobile = serializers.CharField(max_length=12)
         National_ID = serializers.CharField(max_length=40)
         University = serializers.CharField(max_length=100)
         Faculty = serializers.CharField(max_length=100)
